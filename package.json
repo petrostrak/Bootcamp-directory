@@ -1,0 +1,27 @@
+{
+  "name": "bootcamp-directory",
+  "version": "1.0.0",
+  "description": "Backend Node API for BootCamp application, which is a bootcamp directory website",
+  "main": "server.js",
+  "scripts": {
+    "start": "NODE_ENV=production node server",
+    "dev": "nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/petrostrak/Bootcamp-directory.git"
+  },
+  "author": "petros_trak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/petrostrak/Bootcamp-directory/issues"
+  },
+  "homepage": "https://github.com/petrostrak/Bootcamp-directory#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  }
+}
