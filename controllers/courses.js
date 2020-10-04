@@ -1,11 +1,11 @@
 const ErrorRespose = require('../utils/errorResponse')
+const asyncHandler = require('../middleware/async')
 const Course = require('../models/Course')
 const Bootcamp = require('../models/Bootcamp')
-const asyncHandler = require('../middleware/async')
 
 // @desc    Get all courses
 // @route   GET /api/v1/courses
-// @route   GET /api/v1/bootcamps/bootcampId/courses
+// @route   GET /api/v1/bootcamps/:bootcampId/courses
 // @access  Public
 exports.getCourses = asyncHandler(async (req, res, next) => {
     if(req.params.bootcampId) {
